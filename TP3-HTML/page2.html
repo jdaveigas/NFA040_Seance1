@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-table {
-  border-collapse: collapse;
-  font-family: sans-serif;
-  font-size: 0.8rem;
-}
-
-th,
-td {
-  padding: 8px 10px;
-}
-</style>
-
 <head>
 	<meta charset="utf-8">
 	<title>Lecture du fichier </title> 
+
+    <style>
+        table { border: 1px solid rgb(140 140 140); }
+        
+        tr, td  {
+          border: 1px solid rgb(160 160 160);
+        }
+
+        #tab1 tr, td{ padding-right: 10vh; }
+        
+        #tab2 tr, td{ padding-bottom: 5vh; }
+        
+    </style>
 </head>
 
-<table>
-    <tbody>
-      <tr>
-        <th scope="row">un tableau</th>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th scope="row"></th>
-        <td>à 6</td>
-        <td>cases</td>
-      </tr>
-  </table>
+<body>
 
+<p><big>Voici la première partie</big></p>
+
+<table>
+    <tobdy id="tab1">
+        <tr>
+            <td>un tableau</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>à 6</td>
+            <td>cases</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><big>Voici la deuxième partie</big></p>
+
+<ol>
+<li>premier point</li>
+<ul>
+    <li>rubrique 1</li>
+    <li>rubrique 2</li>
+</ul>
+<li>2e point</li>
+<li>3e point</li>
+<ul>
+    <li>rubrique 1</li>
+    <li>rubrique 2</li>
+</ul>
+</ol>
+
+<p><big>Voici la troisième partie</big></p>
+
+<table>
+    <tbody id="tab2">
+        <tr>
+            <td>un autre tableau</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
 </html>
