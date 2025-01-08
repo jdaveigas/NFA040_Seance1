@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Exercice 3</title>
+</head>
+
+<body>
+
+<form action="/page3.html" method="post">
+
+  <label for="name">Votre pseudo :</label>
+  <input type="text" id="name" name="user_name" />
+  <br>
+
+  <label for="pass">Mot de passe :</label>
+  <input type="password" id="pass" name="pass" />
+  <br>
+
+  <label for="confpass">Ressaisir votre mot de passe :</label>
+  <input type="password" id="confpass" name="confpass" minlength="8" required />
+  <br>
+
+  <label for="confpass">OS préféré :</label>
+    <input type="radio" id="xp" name="os" value="xp" checked />
+    <label for="xp">Windows XP</label>
+    
+    <input type="radio" id="vista" name="os" value="vista" />
+    <label for="vista">Windows Vista</label>
+
+    <input type="radio" id="mac" name="os" value="mac" />
+    <label for="mac">MacOS X</label>
+    
+    <input type="radio" id="linux" name="os" value="linux" checked />
+    <label for="linux">Linux</label>
+    
+    <input type="radio" id="autre" name="os" value="autre" />
+    <label for="autre">Autre</label>
+  <br>
+
+  <label for="machine">Vous possédez :</label>
+    <input type="checkbox" id="bureau" name="machine" value="bureau" checked />
+    <label for="bureau">Un ordinateur de bureau</label>
+    
+    <input type="checkbox" id="portable" name="machine" value="portable" />
+    <label for="portable">Un portable</label>
+
+    <input type="checkbox" id="netbook" name="machine" value="netbook" />
+    <label for="netbook">Un netbook</label>
+    
+    <input type="checkbox" id="tablette" name="machine" value="tablette" checked />
+    <label for="tablette">Une tablette (Pad)</label>
+  <br>
+
+  <label for="profession">Votre profession:</label>
+    <select name="profession" id="pet-select">
+      <option value="chomeur">Chômeur</option>
+      <option value="etudiant">Etudiant</option>
+      <option value="fonctionnaire">Fonctionnaire</option>
+      <option value="priver">Privé</option>
+      <option value="retraite">Retraité</option>
+    </select>
+  <br>
+
+  <input type="submit" value="S'inscrire !" />
+
+
+  </form>
+
+</body>
+</html>
